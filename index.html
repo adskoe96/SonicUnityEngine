@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Sonic Unity Engine Test</title>
+    <style>body{background-color: black;}</style>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/HTML.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <center>
+    <p style="color: blue;">Sonic Unity Engine WEBGL Test</p>
+  </center>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title" style="color: blanchedalmond;">Fullscreen --></div>
+      </div>
+    </div>
+  </body>
+  <footer>
+<center>
+  <p style="color: rgb(255, 255, 255);">Arrows to walk</p>
+    <p style="color: rgb(255, 255, 255);">D to Jump</p>
+    <p style="color: rgb(255, 255, 255);">Arrow Down + D Spindash</p>
+    <br>
+    <br>
+    <p style="color: rgb(255, 0, 0);">Site by adskoe96</p>
+</center>
+  </footer>
+</html>
